@@ -1,7 +1,7 @@
 import hashlib
 BLOCKSIZE = 65536
 hasher = hashlib.md5()
-with open('/Users/amina.aggarwal/test.txt', 'rb') as afile:
+with open('filedirectorypath', 'rb') as afile:
     buf = afile.read(BLOCKSIZE)
     while len(buf) > 0:
         hasher.update(buf)
